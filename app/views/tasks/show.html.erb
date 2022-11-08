@@ -1,0 +1,8 @@
+<h1><%= @task.title %></h1>
+<div class="card">
+  <p><%= @task.details %></p>
+</div>
+<div class="container">
+  <p><%= @task.completed ? '[X] This task is completed' : '[ ] This tasks is not completed yet' %></p>
+</div>
+<%= link_to 'Back to list', '/tasks' %>
