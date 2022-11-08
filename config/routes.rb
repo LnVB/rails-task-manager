@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   # 2. Send the form
   patch '/tasks/:id', to: 'tasks#update'
 
+  # delete
+  delete '/tasks/:id', to: 'tasks#destroy'
+
   # read one = display one task
   get '/tasks/:id', to: 'tasks#show', as: :task
 
