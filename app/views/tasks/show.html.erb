@@ -1,5 +1,8 @@
 <h1><%= @task.title %></h1>
 <div class="card">
+<p><%= link_to 'Edit this task', edit_task_path(@task.id) %></p>
+</div>
+<div class="card">
   <p><%= @task.details %></p>
 </div>
 <div class="container">
